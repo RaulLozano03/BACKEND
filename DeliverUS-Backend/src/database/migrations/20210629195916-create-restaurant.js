@@ -56,6 +56,20 @@ module.exports = {
           'temporally clossed'
         ],
         defaultValue: 'online'
+      },
+      averageServiceMinutes: {
+        allowNull: false,
+        type: Sequelize.DOUBLE
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: new Date()
       }
       // TODO: Include the rest of the fields of the Restaurants table
 
